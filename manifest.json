@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+
+  "name": "NewTab",
+  "description": "BBK's first",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "Bicon.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["back.js"]
+  },
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ]
+}
