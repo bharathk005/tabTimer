@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
 
-  "name": "NewTab",
-  "description": "BBK's first",
+  "name": "tabTimer",
+  "description": "browsing pattern",
   "version": "1.0",
 
   "browser_action": {

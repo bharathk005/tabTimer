@@ -9,7 +9,7 @@ window.addEventListener('load',function(){
 });
 
 
-var rCol = ["#ffa31a","#ffad33","#ffb84d","#ffc266","#ffcc80","#ffd699","#ffe0b3","#ffebcc"];
+var rCol = ["#4d79ff","#ffff1a","#809fff","#ffff4d","#b3c6ff","#ffff80","#e6ecff","#ffffb3"];
 var rColCount = 0;
 var change =1; 
 
