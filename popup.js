@@ -69,7 +69,9 @@ function disp()
 
 function reset()
 {
-	
+	chrome.runtime.sendMessage({message: "reset"}, function(response) 
+	{
+	var tab_title = response.r_tab_title;
 	var table = document.getElementById("tb1");
 	for(var j = 0;j<=tab_title.length-1;j++)
 	{
@@ -78,9 +80,8 @@ function reset()
 	row.parentNode.removeChild(row);
 	}
 	
-	tab_title = [];
-	tab_time = [];
 	disp();
+	});
 }
 
 function tabs()
