@@ -19,15 +19,14 @@ function disp()
   			
 		var tab_title = response.s_tab_title;
 		var tab_time = response.s_tab_time;
-		if(response.done == "yes") 
-		{
+
 		for(var j = 0;j<=tab_title.length-1;j++)
 			{
 				var page = document.createTextNode(tab_title[j]);
 				var td1 = document.createElement("td");
 				td1.appendChild(page);
 
-				var dur = document.createTextNode(tab_time[j]);
+				var dur = document.createTextNode(tab_time[j]+" mins");
 				var td2 = document.createElement("td");
 				td2.appendChild(dur);
 
@@ -43,26 +42,6 @@ function disp()
 				var table = document.getElementById('tb1');
 				table.appendChild(tr); 
 			}
-		}
-		else 
-		{
-				var page = document.createTextNode("not done");
-				var td1 = document.createElement("td");
-				td1.appendChild(page);
-
-				var dur = document.createTextNode("not done");
-				var td2 = document.createElement("td");
-				td2.appendChild(dur);
-
-				var tr = document.createElement("tr");
-				tr.setAttribute("id",tab_title[j])
-				tr.appendChild(td1);
-				tr.appendChild(td2);
-
-				var table = document.getElementById('tb1');
-				table.appendChild(tr);
-		}
-
 	});
 
 }
@@ -80,7 +59,7 @@ function reset()
 	row.parentNode.removeChild(row);
 	}
 	
-	disp();
+
 	});
 }
 
