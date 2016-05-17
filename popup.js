@@ -26,7 +26,7 @@ function disp()
 				var td1 = document.createElement("td");
 				td1.appendChild(page);
 
-				var dur = document.createTextNode(tab_time[j]+" mins");
+				var dur = document.createTextNode(tab_time[j].toFixed(2)+" mins");
 				var td2 = document.createElement("td");
 				td2.appendChild(dur);
 

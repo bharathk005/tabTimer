@@ -121,6 +121,7 @@ chrome.tabs.onActivated.addListener(function(tabId, changeInfo, tabs){
 
 function tabUpdate(){
 		tab_time[currtab] += 0.17;
+	//	tab_time[currtab] = tab_time[currtab].toFixed(2);
 }
 
 function startRequest() {
